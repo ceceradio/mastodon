@@ -124,8 +124,17 @@ class FeedManager
     end
   end
 
+  def unmerge_from_list(from_account, list)
+    timeline_key      = key(:list, list.id)
+    oldest_list_score = redis.zrange(timeline_key, 0, 0, with_scores: true)&.first&.last&.to_i || 0
+
+    @account.statuses.select('id, reblog_of_id').where('id > ?', oldest_list_score).reorder(nil).find_each do |status|
+      remove_from_feed(:list, list.id, status, list.account.user&.aggregates_reblogs?)
+    end
+  end
+
+  # Clear from timeline all statuses from or mentioning target_account
   def clear_from_timeline(account, target_account)
-    # Clear from timeline all statuses from or mentionning target_account
     timeline_key        = key(:home, account.id)
     timeline_status_ids = redis.zrange(timeline_key, 0, -1)
     statuses            = Status.where(id: timeline_status_ids).select(:id, :reblog_of_id, :account_id).to_a
