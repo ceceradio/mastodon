@@ -4,6 +4,11 @@
 - content_for :header_tags do
   = render partial: 'shared/og'
 
+- if @instance_presenter.closed_registrations_message.present?
+  .rich-formatting
+    .block-icon= fa_icon 'warning'
+    = @instance_presenter.closed_registrations_message.html_safe
+
 = simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
   .fields-group
     - if use_seamless_external_login?

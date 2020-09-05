@@ -12,11 +12,11 @@ import Icon from 'mastodon/components/icon';
 import Permalink from 'mastodon/components/permalink';
 
 const messages = defineMessages({
-  favourite: { id: 'notification.favourite', defaultMessage: '{name} favourited your status' },
+  favourite: { id: 'notification.favourite', defaultMessage: '{name} liked your t00t' },
   follow: { id: 'notification.follow', defaultMessage: '{name} followed you' },
   ownPoll: { id: 'notification.own_poll', defaultMessage: 'Your poll has ended' },
   poll: { id: 'notification.poll', defaultMessage: 'A poll you have voted in has ended' },
-  reblog: { id: 'notification.reblog', defaultMessage: '{name} boosted your status' },
+  reblog: { id: 'notification.reblog', defaultMessage: '{name} b00sted your t00t' },
 });
 
 const notificationForScreenReader = (intl, message, timestamp) => {
@@ -185,7 +185,7 @@ class Notification extends ImmutablePureComponent {
             </div>
 
             <span title={notification.get('created_at')}>
-              <FormattedMessage id='notification.favourite' defaultMessage='{name} favourited your status' values={{ name: link }} />
+              <FormattedMessage id='notification.favourite' defaultMessage='{name} liked your t00t' values={{ name: link }} />
             </span>
           </div>
 
@@ -217,7 +217,7 @@ class Notification extends ImmutablePureComponent {
             </div>
 
             <span title={notification.get('created_at')}>
-              <FormattedMessage id='notification.reblog' defaultMessage='{name} boosted your status' values={{ name: link }} />
+              <FormattedMessage id='notification.reblog' defaultMessage='{name} b00sted your t00t' values={{ name: link }} />
             </span>
           </div>
 

@@ -11,12 +11,14 @@ export default class Avatar extends React.PureComponent {
     style: PropTypes.object,
     inline: PropTypes.bool,
     animate: PropTypes.bool,
+    memorial: PropTypes.bool,
   };
 
   static defaultProps = {
     animate: autoPlayGif,
     size: 20,
     inline: false,
+    memorial: false
   };
 
   state = {
@@ -37,6 +39,7 @@ export default class Avatar extends React.PureComponent {
     const { account, size, animate, inline } = this.props;
     const { hovering } = this.state;
 
+    const memorial = account.get('memorial');
     const src = account.get('avatar');
     const staticSrc = account.get('avatar_static');
 
@@ -53,6 +56,12 @@ export default class Avatar extends React.PureComponent {
       backgroundSize: `${size}px ${size}px`,
     };
 
+    const imgStyle = {
+      width: `${size}px`,
+      display: 'block',
+      position: 'static'
+    }
+
     if (hovering || animate) {
       style.backgroundImage = `url(${src})`;
     } else {
@@ -65,7 +74,9 @@ export default class Avatar extends React.PureComponent {
         onMouseEnter={this.handleMouseEnter}
         onMouseLeave={this.handleMouseLeave}
         style={style}
-      />
+      >
+        {memorial && <img style={imgStyle} src="/rip.png"></img>}
+      </div>
     );
   }
 

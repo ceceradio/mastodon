@@ -142,7 +142,7 @@
   {
     "descriptors": [
       {
-        "defaultMessage": "{count, plural, one {{counter} Toot} other {{counter} Toots}}",
+        "defaultMessage": "{count, plural, one {{counter} t00t} other {{counter} t00ts}}",
         "id": "account.statuses_counter"
       },
       {
@@ -433,7 +433,7 @@
         "id": "status.cannot_reblog"
       },
       {
-        "defaultMessage": "Favourite",
+        "defaultMessage": "Like",
         "id": "status.favourite"
       },
       {
@@ -547,7 +547,7 @@
         "id": "status.filtered"
       },
       {
-        "defaultMessage": "Pinned toot",
+        "defaultMessage": "Pinned t00t",
         "id": "status.pinned"
       },
       {
@@ -611,7 +611,7 @@
         "id": "confirmations.redraft.confirm"
       },
       {
-        "defaultMessage": "Are you sure you want to delete this status and re-draft it? Favourites and boosts will be lost, and replies to the original post will be orphaned.",
+        "defaultMessage": "Are you sure you want to delete this status and re-draft it? Likes and boosts will be lost, and replies to the original post will be orphaned.",
         "id": "confirmations.redraft.message"
       },
       {
@@ -636,11 +636,11 @@
   {
     "descriptors": [
       {
-        "defaultMessage": "Toots",
+        "defaultMessage": "t00ts",
         "id": "account.posts"
       },
       {
-        "defaultMessage": "Toots and replies",
+        "defaultMessage": "t00ts and replies",
         "id": "account.posts_with_replies"
       },
       {
@@ -683,7 +683,7 @@
   {
     "descriptors": [
       {
-        "defaultMessage": "Older toots",
+        "defaultMessage": "Older t00ts",
         "id": "timeline_hint.resources.statuses"
       },
       {
@@ -691,7 +691,7 @@
         "id": "empty_column.account_unavailable"
       },
       {
-        "defaultMessage": "No toots here!",
+        "defaultMessage": "No t00ts here!",
         "id": "empty_column.account_timeline"
       }
     ],
@@ -797,7 +797,7 @@
         "id": "account.show_reblogs"
       },
       {
-        "defaultMessage": "Pinned toots",
+        "defaultMessage": "Pinned t00ts",
         "id": "navigation_bar.pins"
       },
       {
@@ -809,7 +809,7 @@
         "id": "navigation_bar.follow_requests"
       },
       {
-        "defaultMessage": "Favourites",
+        "defaultMessage": "Likes",
         "id": "navigation_bar.favourites"
       },
       {
@@ -916,7 +916,7 @@
         "id": "column.bookmarks"
       },
       {
-        "defaultMessage": "You don't have any bookmarked toots yet. When you bookmark one, it will show up here.",
+        "defaultMessage": "You don't have any bookmarked t00ts yet. When you bookmark one, it will show up here.",
         "id": "empty_column.bookmarked_statuses"
       }
     ],
@@ -951,7 +951,7 @@
         "id": "account.edit_profile"
       },
       {
-        "defaultMessage": "Pinned toots",
+        "defaultMessage": "Pinned t00ts",
         "id": "navigation_bar.pins"
       },
       {
@@ -963,7 +963,7 @@
         "id": "navigation_bar.follow_requests"
       },
       {
-        "defaultMessage": "Favourites",
+        "defaultMessage": "Likes",
         "id": "navigation_bar.favourites"
       },
       {
@@ -1008,7 +1008,7 @@
         "id": "compose_form.spoiler_placeholder"
       },
       {
-        "defaultMessage": "Toot",
+        "defaultMessage": "t00t",
         "id": "compose_form.publish"
       },
       {
@@ -1207,11 +1207,11 @@
         "id": "search_results.accounts"
       },
       {
-        "defaultMessage": "Toots",
+        "defaultMessage": "t00ts",
         "id": "search_results.statuses"
       },
       {
-        "defaultMessage": "Searching toots by their content is not enabled on this Mastodon server.",
+        "defaultMessage": "Searching t00ts by their content is not enabled on this Mastodon server.",
         "id": "search_results.statuses_fts_disabled"
       },
       {
@@ -1232,7 +1232,7 @@
         "id": "search.placeholder"
       },
       {
-        "defaultMessage": "Simple text returns statuses you have written, favourited, boosted, or have been mentioned in, as well as matching usernames, display names, and hashtags.",
+        "defaultMessage": "Simple text returns statuses you have written, liked, boosted, or have been mentioned in, as well as matching usernames, display names, and hashtags.",
         "id": "search_popout.tips.full_text"
       },
       {
@@ -1343,11 +1343,11 @@
         "id": "compose_form.lock_disclaimer.lock"
       },
       {
-        "defaultMessage": "This toot won't be listed under any hashtag as it is unlisted. Only public toots can be searched by hashtag.",
+        "defaultMessage": "This t00t won't be listed under any hashtag as it is unlisted. Only public t00ts can be searched by hashtag.",
         "id": "compose_form.hashtag_warning"
       },
       {
-        "defaultMessage": "This toot will only be sent to all the mentioned users.",
+        "defaultMessage": "This t00t will only be sent to all the mentioned users.",
         "id": "compose_form.direct_message_warning"
       },
       {
@@ -1388,7 +1388,7 @@
         "id": "navigation_bar.logout"
       },
       {
-        "defaultMessage": "Compose new toot",
+        "defaultMessage": "Compose new t00t",
         "id": "navigation_bar.compose"
       },
       {
@@ -1496,7 +1496,7 @@
         "id": "confirmations.unfollow.message"
       },
       {
-        "defaultMessage": "Toots",
+        "defaultMessage": "t00ts",
         "id": "account.posts"
       },
       {
@@ -1559,11 +1559,11 @@
   {
     "descriptors": [
       {
-        "defaultMessage": "Favourites",
+        "defaultMessage": "Likes",
         "id": "column.favourites"
       },
       {
-        "defaultMessage": "You don't have any favourite toots yet. When you favourite one, it will show up here.",
+        "defaultMessage": "You don't have any liked t00ts yet. When you like one, it will show up here.",
         "id": "empty_column.favourited_statuses"
       }
     ],
@@ -1576,7 +1576,7 @@
         "id": "refresh"
       },
       {
-        "defaultMessage": "No one has favourited this toot yet. When someone does, they will show up here.",
+        "defaultMessage": "No one has liked this t00t yet. When someone does, they will show up here.",
         "id": "empty_column.favourites"
       }
     ],
@@ -1715,7 +1715,7 @@
         "id": "navigation_bar.follow_requests"
       },
       {
-        "defaultMessage": "Favourites",
+        "defaultMessage": "Likes",
         "id": "navigation_bar.favourites"
       },
       {
@@ -1731,7 +1731,7 @@
         "id": "navigation_bar.mutes"
       },
       {
-        "defaultMessage": "Pinned toots",
+        "defaultMessage": "Pinned t00ts",
         "id": "navigation_bar.pins"
       },
       {
@@ -1904,7 +1904,7 @@
         "id": "introduction.interactions.reply.headline"
       },
       {
-        "defaultMessage": "You can reply to other people's and your own toots, which will chain them together in a conversation.",
+        "defaultMessage": "You can reply to other people's and your own t00ts, which will chain them together in a conversation.",
         "id": "introduction.interactions.reply.text"
       },
       {
@@ -1912,19 +1912,19 @@
         "id": "introduction.interactions.reblog.headline"
       },
       {
-        "defaultMessage": "You can share other people's toots with your followers by boosting them.",
+        "defaultMessage": "You can share other people's t00ts with your followers by boosting them.",
         "id": "introduction.interactions.reblog.text"
       },
       {
-        "defaultMessage": "Favourite",
+        "defaultMessage": "Like",
         "id": "introduction.interactions.favourite.headline"
       },
       {
-        "defaultMessage": "You can save a toot for later, and let the author know that you liked it, by favouriting it.",
+        "defaultMessage": "You can save a t00t for later, and let the author know that you liked it, by liking it.",
         "id": "introduction.interactions.favourite.text"
       },
       {
-        "defaultMessage": "Finish toot-orial!",
+        "defaultMessage": "Finish t00t-orial!",
         "id": "introduction.interactions.action"
       }
     ],
@@ -1957,7 +1957,7 @@
         "id": "keyboard_shortcuts.profile"
       },
       {
-        "defaultMessage": "to favourite",
+        "defaultMessage": "to like",
         "id": "keyboard_shortcuts.favourite"
       },
       {
@@ -1997,7 +1997,7 @@
         "id": "keyboard_shortcuts.compose"
       },
       {
-        "defaultMessage": "to start a brand new toot",
+        "defaultMessage": "to start a brand new t00t",
         "id": "keyboard_shortcuts.toot"
       },
       {
@@ -2041,11 +2041,11 @@
         "id": "keyboard_shortcuts.start"
       },
       {
-        "defaultMessage": "to open favourites list",
+        "defaultMessage": "to open likes list",
         "id": "keyboard_shortcuts.favourites"
       },
       {
-        "defaultMessage": "to open pinned toots list",
+        "defaultMessage": "to open pinned t00ts list",
         "id": "keyboard_shortcuts.pinned"
       },
       {
@@ -2231,7 +2231,7 @@
         "id": "notifications.column_settings.follow_request"
       },
       {
-        "defaultMessage": "Favourites:",
+        "defaultMessage": "Likes:",
         "id": "notifications.column_settings.favourite"
       },
       {
@@ -2256,7 +2256,7 @@
         "id": "notifications.filter.mentions"
       },
       {
-        "defaultMessage": "Favourites",
+        "defaultMessage": "Likes",
         "id": "notifications.filter.favourites"
       },
       {
@@ -2294,7 +2294,7 @@
   {
     "descriptors": [
       {
-        "defaultMessage": "{name} favourited your status",
+        "defaultMessage": "{name} liked your t00t",
         "id": "notification.favourite"
       },
       {
@@ -2310,7 +2310,7 @@
         "id": "notification.poll"
       },
       {
-        "defaultMessage": "{name} boosted your status",
+        "defaultMessage": "{name} b00sted your t00t",
         "id": "notification.reblog"
       },
       {
@@ -2349,7 +2349,7 @@
   {
     "descriptors": [
       {
-        "defaultMessage": "Pinned toot",
+        "defaultMessage": "Pinned t00t",
         "id": "column.pins"
       }
     ],
@@ -2388,7 +2388,7 @@
         "id": "refresh"
       },
       {
-        "defaultMessage": "No one has boosted this toot yet. When someone does, they will show up here.",
+        "defaultMessage": "No one has boosted this t00t yet. When someone does, they will show up here.",
         "id": "status.reblogs.empty"
       }
     ],
@@ -2433,7 +2433,7 @@
         "id": "status.cannot_reblog"
       },
       {
-        "defaultMessage": "Favourite",
+        "defaultMessage": "Like",
         "id": "status.favourite"
       },
       {
@@ -2556,7 +2556,7 @@
         "id": "confirmations.redraft.confirm"
       },
       {
-        "defaultMessage": "Are you sure you want to delete this status and re-draft it? Favourites and boosts will be lost, and replies to the original post will be orphaned.",
+        "defaultMessage": "Are you sure you want to delete this status and re-draft it? Likes and boosts will be lost, and replies to the original post will be orphaned.",
         "id": "confirmations.redraft.message"
       },
       {
@@ -2585,7 +2585,7 @@
         "id": "confirmations.redraft.confirm"
       },
       {
-        "defaultMessage": "Are you sure you want to delete this status and re-draft it? Favourites and boosts will be lost, and replies to the original post will be orphaned.",
+        "defaultMessage": "Are you sure you want to delete this status and re-draft it? Likes and boosts will be lost, and replies to the original post will be orphaned.",
         "id": "confirmations.redraft.message"
       },
       {
@@ -2719,7 +2719,7 @@
   {
     "descriptors": [
       {
-        "defaultMessage": "Toot",
+        "defaultMessage": "t00t",
         "id": "compose_form.publish"
       }
     ],
@@ -2943,7 +2943,7 @@
         "id": "navigation_bar.direct"
       },
       {
-        "defaultMessage": "Favourites",
+        "defaultMessage": "Likes",
         "id": "navigation_bar.favourites"
       },
       {

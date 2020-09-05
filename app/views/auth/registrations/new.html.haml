@@ -4,8 +4,14 @@
 - content_for :header_tags do
   = render partial: 'shared/og', locals: { description: description_for_sign_up }
 
+- if @instance_presenter.closed_registrations_message.present?
+  .rich-formatting
+    .block-icon= fa_icon 'warning'
+    = @instance_presenter.closed_registrations_message.html_safe
+
 = simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { novalidate: false }) do |f|
   = render 'shared/error_messages', object: resource
+
 
   - if @invite.present? && @invite.autofollow?
     .fields-group.invited-by

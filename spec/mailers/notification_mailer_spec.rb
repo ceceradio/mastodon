@@ -59,12 +59,12 @@ RSpec.describe NotificationMailer, type: :mailer do
     include_examples 'localized subject', 'notification_mailer.favourite.subject', name: 'bob'
 
     it "renders the headers" do
-      expect(mail.subject).to eq("bob favourited your status")
+      expect(mail.subject).to eq("bob liked your status")
       expect(mail.to).to eq([receiver.email])
     end
 
     it "renders the body" do
-      expect(mail.body.encoded).to match("Your status was favourited by bob")
+      expect(mail.body.encoded).to match("Your status was liked by bob")
       expect(mail.body.encoded).to include 'The body of the own status'
     end
   end
@@ -76,12 +76,12 @@ RSpec.describe NotificationMailer, type: :mailer do
     include_examples 'localized subject', 'notification_mailer.reblog.subject', name: 'bob'
 
     it "renders the headers" do
-      expect(mail.subject).to eq("bob boosted your status")
+      expect(mail.subject).to eq("bob b00sted your t00t")
       expect(mail.to).to eq([receiver.email])
     end
 
     it "renders the body" do
-      expect(mail.body.encoded).to match("Your status was boosted by bob")
+      expect(mail.body.encoded).to match("Your t00t was b00sted by bob")
       expect(mail.body.encoded).to include 'The body of the own status'
     end
   end
